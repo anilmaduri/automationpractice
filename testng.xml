@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="AutomationPractice" verbose="1" >
+  <test name="Functional Tests" >
+    <classes>
+        <class name="com.automationpractice.tests.SearchTests" />
+        <parameter name="searchKey" value="t-shirts" />
+    </classes>
+  </test>
+  
+   
+ <!--  <test name="Regression1">
+    <classes>
+    <class name="com.automationpractice.tests.LoginTests" />
+        <class name="com.automationpractice.tests.WomenTests" />
+        <class name="com.automationpractice.tests.DressesTests" />
+      <class name="test.sample.ParameterSample"/>
+      <class name="test.sample.ParameterTest"/>
+      <parameter name="searchKey" value="Printed Chiffon Dress" />
+      <parameter name="searchKey" value="Blouse" />
+    </classes>
+  </test> -->
+</suite>
