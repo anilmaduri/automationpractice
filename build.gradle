@@ -30,5 +30,26 @@ dependencies {
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.11.0'
 	// https://mvnrepository.com/artifact/org.testng/testng
 	testCompile group: 'org.testng', name: 'testng', version: '6.11'
+	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.9.1'
+	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.9.1'
+	// https://mvnrepository.com/artifact/log4j/log4j
+	compile group: 'log4j', name: 'log4j', version: '1.2.17'
+	
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-email
+	compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
+	
+	// https://mvnrepository.com/artifact/org.apache.poi/poi
+	compile "org.apache.poi:poi:3.17"
+	compile "org.apache.poi:poi-ooxml:3.17"
+	
+	
 }
 
+task automationtest(type:Test){
+	useTestNG(){
+	suites 'testng.xml'
+	useDefaultListeners=true
+	}
+}
